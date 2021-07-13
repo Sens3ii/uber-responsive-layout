@@ -1,5 +1,5 @@
 $main_color: #1eacc7
-&second_color: #FF5656
+$second_color: #FF5656
 *
 	font-family: "Roboto", sans-serif
 header
@@ -137,6 +137,8 @@ nav
 				line-height: 21px
 				text-align: justify
 .label
+	position: relative
+	z-index: 2
 	background: #000000
 	margin: 0 auto
 	height: 24px
@@ -148,7 +150,12 @@ nav
 	text-align: center
 	text-transform: uppercase
 	color: #ffffff
+	&_white
+		background-color: #fff
+		color: #000
 .title
+	position: relative
+	z-index: 2
 	font-weight: 700
 	font-size: 38px
 	text-align: center
@@ -157,13 +164,19 @@ nav
 	line-height: 33px
 	margin: 0
 	margin-top: 38px
+	&_white
+		color: #ffffff
 .subtitle
+	position: relative
+	z-index: 2
 	font-weight: 400
 	font-size: 17px
 	text-align: center
 	color: #222222
 	line-height: 12px
 	margin-top: 14px
+	&_white
+		color: #ffffff
 
 .mobile
 	min-height: 860px
@@ -210,3 +223,28 @@ nav
 			background-color: #000000
 			border-radius: 100%
 			cursor: pointer
+
+.choice
+	position: relative
+	min-height: 895px
+	padding: 57px 0 138px 0
+	background: url('../img/bg/mobile_app.png') center (center / cover) no-repeat
+	&_img
+		position: relative
+		display: block
+		margin: 56px auto 0 auto
+		z-index: 2
+	&_descr
+		text-align: center
+		color: #222222
+		font-size: 17px
+		font-weight: 300
+		line-height: 24px
+	.black
+		position: absolute
+		top: 0
+		left: 0
+		height: 499px
+		width: 100%
+		background-color: #070716
+		z-index: 1
