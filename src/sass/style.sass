@@ -27,6 +27,10 @@ nav
 		color: #ffffff
 		font-size: 15px
 		font-weight: 300
+		transition: 0.3s all
+		&:hover
+			text-decoration: none
+			color: $main_color
 	&_item
 		&:not(:last-child)
 			border-right: 2px dotted black
@@ -235,6 +239,7 @@ nav
 				width: 14px
 				height: 2px
 				background: $main-color
+				transition: 0.3s all
 			&:after
 				content: ''
 				width: 2px
@@ -243,6 +248,10 @@ nav
 				position: absolute
 				left: 50%
 				transform: translateX(-50%)
+				transition: 0.3s all
+			&:hover
+				&:before, &:after
+					background-color: $second-color
 
 .choice
 	position: relative
@@ -317,3 +326,23 @@ nav
 				background: url('../icons/check_blue.svg') center (center / cover) no-repeat
 				left: -30px
 				top: 2px
+
+.world
+	position: relative
+	height: 716px
+	background: url('../img/bg/map.jpg') center (center / cover) no-repeat
+	padding: 48px 0 50px 0
+	&_link
+		position: absolute
+		font-weight: 400
+		font-size: 15px
+		text-align: center
+		text-transform: uppercase
+		color: $main-color
+		bottom: 50px
+		left: 50%
+		transform: translateX(-50%)
+		transition: 0.3s all
+		&:hover
+			text-decoration: none
+			color: $second_color
