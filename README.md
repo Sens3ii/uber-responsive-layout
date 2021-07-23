@@ -6,4 +6,5 @@ Site is available on github pages -> [WebSite](https://sens3ii.github.io/uber-re
 ## Technologies used:
 * HTML, SASS
 * Bootstrap GRID
+* Gulp
 * JS
